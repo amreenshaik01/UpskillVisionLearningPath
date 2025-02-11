@@ -1,0 +1,60 @@
+/* UserProgressPage.css */
+.courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .course-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    color: #4CAF50;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+  .user-progress-page-back-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed; /* Fix the button in place */
+    top: 35px; /* Distance from the top */
+    left: 35px; /* Distance from the left */
+    z-index: 1000; /* Ensure it stays above other content */
+    display: inline-block; /* Ensure button takes only its content's size */
+    width: auto; /* Prevent the button from stretching */
+    text-align: center; /* Center the text inside */
+  }
+
+  /* Header styling */
+.user-progress-page-header {
+  background-color: #ffffff; /* Dark blue background */
+  color: #000000; /* White text */
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+  padding-left: 100px; /* Add space on the left side */
+  font-size: 2.0em; /* Adjust font size */
+  margin: 0; /* Remove default margin */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for better definition */
+}

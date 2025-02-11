@@ -1,0 +1,111 @@
+/* General styling */
+.department-dashboard {
+    background: url('../../images/3.jpg') no-repeat center center/cover;
+    padding: 20px;
+    min-height: 100vh;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+  }
+  
+  /* Back button styling - Positioned at Top Left */
+  .back-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .back-button:hover {
+    background-color: #4c0fa9;
+  }
+  
+  /* Dashboard header */
+  .dashboard-header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: white; /* Changed to White */
+    margin-top: 50px;
+  }
+  
+  /* Department details */
+  .department-details {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .department-details h3,
+  .department-details h4 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: white; /* Changed to White */
+  }
+  
+  /* User list section */
+  .user-list {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .user-list h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fcfbfd;
+  }
+  
+  /* User cards displayed horizontally */
+  .user-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  /* Individual user card */
+  .user-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    flex: 0 0 auto;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .user-card h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .user-card p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .user-card strong {
+    color: #222;
+  }
+  

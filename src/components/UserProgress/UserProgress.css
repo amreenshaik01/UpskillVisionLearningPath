@@ -1,0 +1,78 @@
+ /* Header styling */
+.user-progress-header {
+  background-color: #ffffff; /* Dark blue background */
+  color: #000000; 
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+  padding-left: 100px; /* Add space on the left side */
+  font-size: 3.0em; /* Adjust font size */
+  margin: 0; /* Remove default margin */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for better definition */
+}
+
+/* UserProgress.css */
+.user-progress-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.user-progress-module-card {
+  width: 300px; /* Adjust width as needed */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.user-progress-section,
+.quiz-section,
+.details-section {
+  margin-bottom: 16px;
+  color: #000000;
+}
+
+.user-progress-chart-container {
+  height: 200px; /* Adjust chart height */
+  width: 100%; /* Full width of module card */
+}
+
+.user-progress-section .CircularProgressbar {
+  height: 100px; /* Set a consistent size for circular progress bar */
+  width: 100px;
+  margin: 0 auto;
+}
+
+.user-progress-module-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font: 24px;
+  color: #000000;
+}
+
+.user-progress-details-section{
+  color: #000000;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+
+.user-progress-back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: fixed; /* Fix the button in place */
+  top: 35px; /* Distance from the top */
+  left: 35px; /* Distance from the left */
+  z-index: 1000; /* Ensure it stays above other content */
+  display: inline-block; /* Ensure button takes only its content's size */
+  width: auto; /* Prevent the button from stretching */
+  text-align: center; /* Center the text inside */
+}

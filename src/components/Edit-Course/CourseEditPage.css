@@ -1,0 +1,150 @@
+/* Set the white background for the entire page with an image */
+.course-edit-page-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url('../../images/3.jpg');
+  background-size: cover; /* Ensures the image fits inside the container without cropping */
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  overflow-y: auto; /* Allows scrolling for long content */
+}
+
+/* Styling for the back button */
+.course-edit-page-back-button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: auto;
+  height: auto;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: inline-block;
+}
+
+.course-edit-page-back-button:hover {
+  background: #17760e9d;
+}
+
+.course-edit-page-error-message {
+  color: red;
+  margin: 10px 0;
+}
+
+/* Search Bar Styles */
+.course-edit-page-search {
+  width: 80%;
+  max-width: 600px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin: 10px auto 20px auto; 
+  
+
+}
+
+.course-edit-page-search-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #f7f7f7;
+  transition: border-color 0.3s ease;
+}
+
+.course-edit-page-search-input:focus {
+  border-color: #007bff;
+}
+
+.course-edit-page-courses-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Centers cards in the container */
+  margin-top: 20px;
+}
+
+.course-edit-page-course-card {
+  background-color: #fff;  /* White background for the course card */
+  border: 2px solid #555; /* Subtle border */
+  border-radius: 10px;
+  margin-top: 40px;
+  padding: 20px;
+  width: 300px; /* Fixed width for consistency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left; /* Left-align text for readability */
+  color: #333; /* Dark text color for better contrast */
+}
+
+.course-edit-page-course-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.course-edit-page-button-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.course-edit-page-blue-button {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.course-edit-page-blue-button:hover {
+  background: #0056b3;
+}
+
+.course-edit-page-header {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  font-size: 2.0em;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course-edit-page-header {
+    font-size: 1.6rem;
+  }
+
+  .course-edit-page-back-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .course-edit-page-blue-button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .course-edit-page-search-input {
+    font-size: 1rem;
+  }
+
+  .course-edit-page-courses-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

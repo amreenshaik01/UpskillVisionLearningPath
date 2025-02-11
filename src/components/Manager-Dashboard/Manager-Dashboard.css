@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.box {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  color: #007bff;
+  font-size: 36px;
+}
+
+.paragraph {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Manager Performance Sections */
+.manager-performance-section {
+  margin-top: 15px; /* Reduced margin */
+  padding: 15px; /* Slightly smaller padding */
+  background: #ffffff;
+  border-radius: 10px; /* Reduced border-radius */
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.manager-buttons-container {
+  display: flex;
+  justify-content: space-evenly; /* Better spacing */
+  gap: 10px; /* Added gap for better spacing */
+  margin-bottom: 10px;
+}
+
+.manager-button-box {
+  background: #2c3e50; /* Darker shade for better contrast */
+  color: white;
+  padding: 15px; /* Reduced padding */
+  border-radius: 8px; /* Smaller border-radius */
+  text-align: center;
+  flex: 0.9; /* Adjusted flex to reduce size */
+  margin: 4px;
+  font-size: 14px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.manager-button-box:hover {
+  transform: scale(1.05); /* Slight hover effect */
+}
+
+.manager-button-box h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.view-button {
+  background: #1abc9c;
+  color: white;
+  border: none;
+  padding: 8px 14px; /* Slightly smaller button */
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.view-button:hover {
+  background: #16a085;
+  transform: scale(1.1);
+}

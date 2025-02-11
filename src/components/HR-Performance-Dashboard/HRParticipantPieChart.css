@@ -1,0 +1,50 @@
+.participant-piechart-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .participant-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  h1 {
+    color: white;
+}
+  
+  .participant-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .course-count {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+
+  .user-role-management-back-button {
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .user-role-management-back-button:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  }

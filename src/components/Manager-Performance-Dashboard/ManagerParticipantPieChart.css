@@ -1,0 +1,31 @@
+.participant-piechart-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .participant-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .participant-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .course-count {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  

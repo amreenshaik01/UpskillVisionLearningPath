@@ -1,0 +1,327 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../../images/3.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  font-family: 'Roboto', sans-serif;
+  color: #333; /* Default text color */
+}
+
+
+.course-details-back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  /* Remove position: fixed; to make the button flow normally */
+  position: relative; /* Make it flow with the content */
+  margin-top: 20px; /* Adjust margin if you want space above */
+  z-index: 1000; /* Keeps button above other content in normal flow */
+  display: inline-block; /* Ensure button takes only its content's size */
+  width: auto; /* Prevent the button from stretching */
+  text-align: center; /* Center the text inside */
+}
+
+
+
+/* Main Container */
+.course-details-container {
+  max-width: 50%;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* Course Title */
+.course-details--title {
+  font-size: 1.5rem;
+  font-weight:bold;
+  margin-bottom: 20px;
+  color: #000000 !important;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Course Description */
+.course-details-description {
+  font-size: 1.2rem;
+  font-weight: 1000;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000000 !important;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* Progress Bar */
+.course-details-progress-bar-container {
+  margin: 30px 0;
+  background-color: #e6e6e6;
+  border-radius: 50px;
+  height: 18px;
+}
+
+.course-details-progress-bar {
+  height: 100%;
+  width: 0%; /* Dynamically set this with inline styles */
+  background: linear-gradient(145deg, #4caf50, #3e8e41); /* Gradient progress */
+  border-radius: 50px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Modules List */
+.course-details-module-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-details-module-resources{
+  margin-top: 20px;
+}
+
+/* Module Item */
+.course-details-module-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 15px;
+  position: relative;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-details-module-item.completed {
+  background-color: #d4edda; /* Light green for completed modules */
+}
+
+.course-details-module-item:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Module Header */
+.course-details-module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.course-details-module-learning-points {
+  margin-top: 20px; /* Add some spacing between header and points */
+  font-size: 16px;
+}
+
+.course-details-module-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.course-details-dropdown-arrow {
+  font-size: 1.5rem;
+  color: #777;
+  transition: transform 0.3s ease;
+}
+
+.course-details-module-item.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Resources Section */
+.course-details-resources {
+  margin-top: 15px;
+  padding-left: 20px;
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.course-details-module-item.open .resources {
+  display: block;
+}
+
+.course-details-resource-item {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.course-details-resource-icon {
+  margin-right: 8px;
+  font-size: 1.3rem;
+  color: #4caf50;
+}
+
+.course-details-resource-link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.course-details-resource-link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Quiz Button */
+.course-details-quiz-button-container {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.course-details-quiz-button {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(145deg, #4a90e2, #2575fc);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.course-details-quiz-button:hover {
+  background: linear-gradient(145deg, #2575fc, #4a90e2);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.course-details-quiz-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* Completion Checkbox */
+.course-details-complete-checkbox {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.course-details-checkbox {
+  margin-right: 10px;
+}
+
+.course-details-checkbox-label {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Hover Effects */
+.course-details-module-item:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Review Text Box */
+.course-details-review-box {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.course-details-review-box:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Review Button */
+.course-review-submit-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.course-details-submit-review:hover {
+  background-color: #218838;
+}
+
+.review-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.review-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  min-height: 100px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.review-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course-details-container {
+    padding: 20px;
+  }
+
+  .course-title {
+    font-size: 2rem;
+  }
+
+  .module-title {
+    font-size: 1.2rem;
+  }
+
+  .quiz-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

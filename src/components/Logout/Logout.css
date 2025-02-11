@@ -1,0 +1,121 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../images/1.jpg'); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.login-box {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.4); 
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.login-body label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.login-body input,
+.login-body select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px; 
+  box-sizing: border-box;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: -5px;
+  margin-bottom: 30px;
+
+}
+
+.forgot-password a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+}
+
+.login-button {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px; 
+  background-color: white;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.login-button:hover {
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
+.sign-up {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sign-up span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #3f3c3c;
+}
+
+.sign-up-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sign-up-link:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+}

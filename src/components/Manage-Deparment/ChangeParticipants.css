@@ -1,0 +1,175 @@
+/* Container */
+.container {
+  max-width: 1200px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding inside the container */
+  background-color: #fff; /* Set the background color of the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* Heading Styles */
+h3, h4 {
+  font-size: 1.75rem; /* Larger font size for headings */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Dark gray text color */
+  margin-bottom: 16px; /* Space below the heading */
+  text-align: center; /* Center align the headings */
+}
+
+/* Flex Layout for Participant Sections */
+.participant-container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: 15cm 15cm; /* Set two equal columns with a fixed width */
+  gap: 10px; /* Space between columns */
+  margin-top: 20px; /* Add margin above the container */
+}
+
+.participant-column {
+  background-color: #fff; /* Set background to white */
+  padding: 20px; /* Add padding inside each column */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Participant Section Styles */
+.participants-section {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 20px; /* Add padding inside the section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-height: 400px; /* Limit height to 400px */
+  overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}
+
+.table-container {
+  width: 100%; /* Ensure the table takes full width */
+  overflow-x: auto; /* Enable horizontal scrolling for tables */
+}
+
+table {
+  width: 80%; /* Table width is 80% of the parent container */
+  border-collapse: collapse; /* Remove space between table cells */
+}
+
+th, td {
+  padding: 10px; /* Padding inside table cells */
+  text-align: left; /* Align text to the left */
+  border: 1px solid #ddd; /* Light gray border for table cells */
+  font-size: 1rem; /* Set font size to 1rem */
+}
+
+th {
+  background-color: #f4f4f4; /* Light gray background for table headers */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* Dropdown Styles */
+.dropdown-container {
+  position: relative; /* Position dropdown relative to its container */
+  text-align: center; /* Center the dropdown */
+  margin-top: 10px; /* Space above the dropdown */
+}
+
+.dropdown-button {
+  background-color: #007bff; /* Blue background for the dropdown button */
+  color: white; /* White text color */
+  padding: 10px; /* Padding inside the button */
+  border: none; /* Remove border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Rounded corners for the button */
+}
+
+.dropdown-menu {
+  position: absolute; /* Position menu absolutely relative to the button */
+  top: 100%; /* Align the menu just below the button */
+  left: 50%; /* Center align the menu */
+  transform: translateX(-50%); /* Adjust alignment to perfectly center */
+  width: 500px; /* Set width of the dropdown menu */
+  background: white; /* White background */
+  border: 1px solid #ccc; /* Light gray border around the dropdown */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-height: 300px; /* Limit height of dropdown */
+  overflow-y: auto; /* Allow scrolling if the menu is too long */
+  z-index: 1000; /* Ensure the dropdown appears above other content */
+}
+
+/* Button Styles */
+button {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 1rem; /* Font size of buttons */
+  padding: 10px 15px; /* Padding inside buttons */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners for buttons */
+}
+
+.bg-red-500 {
+  background-color: #dc3545; /* Red background for a danger button */
+  color: white; /* White text color */
+}
+
+.bg-green-500  {
+  background-color: #28a745; /* Green background for a success button */
+  color: white; /* White text color */
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+/* Select Dropdown */
+select {
+  padding: 10px; /* Padding inside the select box */
+  font-size: 1rem; /* Font size of the dropdown */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 6px; /* Rounded corners for select box */
+  width: 100%; /* Ensure select box takes up full width */
+  text-align: center; /* Center align the text inside the dropdown */
+}
+
+/* Back Button */
+.change-manager-page-back-button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: auto;
+  height: auto;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .participant-container {
+    grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+  }
+
+  .participants-section {
+    max-height: none; /* Remove max-height for smaller screens (makes it more flexible) */
+  }
+
+  .dropdown-menu {
+    width: 200px; /* Make the dropdown menu narrower on small screens */
+  }
+
+  .select-container {
+    flex-direction: column; /* Stack elements vertically in select container */
+  }
+
+  select {
+    width: 100%; /* Ensure the select box is full width on smaller screens */
+  }
+}

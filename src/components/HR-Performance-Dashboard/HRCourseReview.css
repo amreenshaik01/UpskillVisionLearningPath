@@ -1,0 +1,143 @@
+/* General Page Styling */
+.course-reviews-container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+/* Heading */
+.course-reviews-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Courses List and Reviews Section - Flexbox Layout */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Courses List */
+.courses-list {
+    flex: 1;
+    text-align: left;
+}
+
+.course-reviews-subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course-list-item {
+    margin: 10px 0;
+}
+
+.course-button {
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.course-button:hover {
+    background-color: #218838;
+}
+
+.course-button.active {
+    background-color: #007bff;
+}
+
+/* Reviews Section */
+.reviews-container {
+    flex: 2;
+    text-align: left;
+}
+
+.reviews-list {
+    list-style: none;
+    padding: 0;
+}
+
+.review-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-user {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.review-text {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.review-date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Loading and Error Messages */
+.loading,
+.error {
+    font-size: 1rem;
+    color: #dc3545;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .courses-list,
+    .reviews-container {
+        flex: 1;
+    }
+
+    .course-button {
+        width: 100%;
+    }
+
+    .review-item {
+        padding: 10px;
+    }
+}
+
+.hr-course-review-back-button {
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .hr-course-review-back-button:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  }

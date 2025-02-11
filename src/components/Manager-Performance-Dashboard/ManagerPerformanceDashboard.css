@@ -1,0 +1,110 @@
+/* User Progress Page Styling */
+.user-progress-page-container {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  /* Search Bar Styling */
+  .user-progress-page-search {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-progress-page-search input {
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Back Button Styling */
+  .user-progress-page-back-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed; /* Fix the button in place */
+    top: 35px; /* Distance from the top */
+    left: 35px; /* Distance from the left */
+    z-index: 1000; /* Ensure it stays above other content */
+    display: inline-block; /* Ensure button takes only its content's size */
+    width: auto; /* Prevent the button from stretching */
+    text-align: center; /* Center the text inside */
+  }
+  
+  /* Header Styling */
+  .user-progress-page-header {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.0em;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Courses List Grid */
+  .courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual User Card Styling */
+  .course-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* User Info Styling */
+  .course-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+  }
+  
+  .course-card p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Button Styling */
+  button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

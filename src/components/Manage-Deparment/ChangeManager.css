@@ -1,0 +1,162 @@
+/* Container for the Change Manager Page */
+.change-manager-page-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url('../../images/3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header */
+.change-manager-page-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fef9f9;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Back Button */
+.change-manager-page-back-button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: auto;
+  height: auto;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: inline-block;
+}
+
+
+.change-manager-page-back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Error and Success Messages */
+.change-manager-page-error-message {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.change-manager-page-success-message {
+  color: green;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Department Form */
+.change-manager-page-form {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Department Name */
+.change-manager-page-form h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Current Manager Display */
+.change-manager-page-form p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.change-manager-page-form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.change-manager-page-form-group label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Select Dropdown */
+.change-manager-page-select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 1rem;
+  color: #333;
+}
+
+.change-manager-page-select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+.change-manager-page-submit-button {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.change-manager-page-submit-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .change-manager-page-header {
+    font-size: 2rem;
+  }
+
+  .change-manager-page-form {
+    padding: 20px;
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .change-manager-page-submit-button {
+    font-size: 1rem;
+  }
+
+  .change-manager-page-back-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

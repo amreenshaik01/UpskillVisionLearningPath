@@ -1,0 +1,143 @@
+.course-leaderboard-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: url("https://source.unsplash.com/1600x900/?abstract") no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-button {
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: white;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-button:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-top: 5px solid #ff416c;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  color: red;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Leaderboard Grid */
+.leaderboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+/* Leaderboard Cards */
+.leaderboard-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leaderboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Rank Badge */
+.rank-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffcc00;
+  color: black;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Medal Colors */
+.rank-1 .rank-badge { background: #ffbf00; color: white; }
+.rank-2 .rank-badge { background: #c0c0c0; color: white; }
+.rank-3 .rank-badge { background: #cd7f32; color: white; }
+
+/* Leaderboard Avatar (Initials) */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+/* Leaderboard Card Info */
+.leaderboard-info h2 {
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.leaderboard-info p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .course-leaderboard-page {
+    background: #1e1e1e;
+  }
+  .leaderboard-card {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}

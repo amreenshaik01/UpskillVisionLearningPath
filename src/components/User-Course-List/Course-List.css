@@ -1,0 +1,181 @@
+/* General container styling */
+.course-list-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background color */
+  color: #333; /* Dark text color for better readability */
+  min-height: 100vh; /* Ensure the page takes up full height */
+  background-image: url('../../images/3.jpg'); /* Add your image path here */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  overflow-y: auto; /* Allows scrolling for long content */
+}
+
+/* Header styling */
+.course-list-header {
+  background-color: #ffffff; /* Dark blue background */
+  color: #000000; /* White text */
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+  padding-left: 100px; /* Add space on the left side */
+  font-size: 2.0em; /* Adjust font size */
+  margin: 0; /* Remove default margin */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for better definition */
+}
+
+
+.course-list-back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: fixed; /* Fix the button in place */
+  top: 35px; /* Distance from the top */
+  left: 35px; /* Distance from the left */
+  z-index: 1000; /* Ensure it stays above other content */
+  display: inline-block; /* Ensure button takes only its content's size */
+  width: auto; /* Prevent the button from stretching */
+  text-align: center; /* Center the text inside */
+}
+
+
+.course-list-back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Error and success message styling */
+.course-list-error-message,
+.course-list-success-message {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.course-list-error-message {
+  background-color: #ffcccc;
+  color: #cc0000;
+}
+
+.course-list-success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Grid layout for course cards */
+.course-list-courses-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Centers cards in the container */
+  margin-top: 20px;
+}
+
+/* Individual course card styling */
+.course-list-course-card {
+  background-color: #fff;  /* White background for the course card */
+  border: 2px solid #555; /* Subtle border */
+  border-radius: 10px;
+  margin-top: 40px;
+  padding: 20px;
+  width: 300px; /* Fixed width for consistency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left; /* Left-align text for readability */
+  color: #333; /* Dark text color for better contrast */
+}
+
+.course-list-course-card:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.course-list-course-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333; /* Dark heading color */
+}
+
+.course-list-course-card p {
+  font-size: 14px;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+/* Styling for course action buttons */
+.course-list-course-actions button {
+  background-color: #888888; /* Neutral gray color */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.course-list-course-actions button:hover {
+  background-color: #666666; /* Darker gray on hover */
+}
+
+.course-list-course-actions button:disabled {
+  background-color: #ccc; /* Gray for disabled buttons */
+  cursor: not-allowed;
+}
+
+/* Search Bar Styling */
+.course-list-search-container {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+
+}
+
+.course-list-search-bar {
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+  text-align: center;
+}
+
+.course-list-search-bar:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Ensure responsive layout */
+@media (max-width: 768px) {
+  .courses-grid {
+    flex-direction: column; /* Stack cards on smaller screens */
+    align-items: center; /* Center-align cards */
+  }
+
+  .course-card {
+    width: 90%; /* Take most of the screen width */
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-grid {
+    justify-content: center;
+  }
+
+  .course-card {
+    width: 100%; /* Full-width cards on small screens */
+  }
+}

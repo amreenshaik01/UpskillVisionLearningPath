@@ -1,0 +1,147 @@
+
+
+
+/* Main Container */
+.create-department-container {
+  max-width: 1000px;
+  padding: 30px;
+  background: #ffffff77; /* Semi-transparent white */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  backdrop-filter: blur(10px); /* Blurry glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  align-items: center;
+}
+
+/* Heading */
+.create-department-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+/* Subheader */
+.create-department-subheader {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Back Button */
+.create-department-back-button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: fixed; /* Fix the button in place */
+  top: 35px; /* Distance from the top */
+  left: 35px; /* Distance from the left */
+  z-index: 1000; /* Ensure it stays above other content */
+  display: inline-block; /* Ensure button takes only its content's size */
+  width: auto; /* Prevent the button from stretching */
+  text-align: center; /* Center the text inside */
+}
+.create-department-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+.create-department-back-button:hover {
+  background: #cc0000;
+}
+
+/* Input Field & Select */
+.create-department-input{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.create-department-select {
+  width: 92%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.create-department-input:focus{
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+.create-department-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+/* Participant List */
+.create-department-participant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.create-department-participant-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #f1f1f1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.create-department-participant-item:hover {
+  background: #e0e0e0;
+}
+
+.create-department-participant-item input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* No Participants Message */
+.create-department-no-participants {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Create Button */
+.create-department-button {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.create-department-button:hover {
+  background: #218838;
+}
